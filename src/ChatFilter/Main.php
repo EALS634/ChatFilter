@@ -64,7 +64,6 @@ class Main extends PluginBase implements Listener
         $blockwords = $this->words->getAll();
         $chat = $event->getMessage();
         $newchat = str_ireplace(array_keys($blockwords),"*",$chat);
-        var_dump(array_keys($blockwords));
-	      $event->setMessage($newchat);
+	$event->setMessage($newchat);
     }
 }
