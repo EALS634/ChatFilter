@@ -19,7 +19,7 @@ class Main extends PluginBase implements Listener
             mkdir($this-dataFolder, 0744, true);
         }
         $this->words = new Config($this->getDataFolder() . "words.txt", Config::ENUM);
-	  }
+    }
 
     public function onCommand(CommandSender $sender, Command $command, String $label, array $args) : bool
     {
@@ -66,5 +66,5 @@ class Main extends PluginBase implements Listener
         $newchat = str_ireplace(array_keys($blockwords),"*",$chat);
         var_dump(array_keys($blockwords));
 	      $event->setMessage($newchat);
-	  }
+    }
 }
