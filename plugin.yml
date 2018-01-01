@@ -1,0 +1,13 @@
+name: ChatFilter
+main: ChatFilter\Main
+version: 1.0.0
+api: [3.0.0-ALPHA10]
+load: POSTWORLD
+commands:
+ words:
+  description: "不適切な言葉をブロックします。"
+  usage: "/words"
+  permission: words
+permissions:
+  words:
+    default: op
